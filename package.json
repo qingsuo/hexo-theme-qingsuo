@@ -1,0 +1,24 @@
+{
+  "name": "hexo-theme-qingsuo",
+  "version": "1.0.0",
+  "description": "A theme for Hexo",
+  "main": "index.js",
+  "keywords": [
+    "responsive",
+    "simple",
+    "light"
+  ],
+  "author": "qingsuo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahonn/hexo-theme-qingsuo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahonn/hexo-theme-qingsuo/issues"
+  },
+  "homepage": "https://github.com/ahonn/hexo-theme-qingsuo#readme",
+  "devDependencies": {
+    "eslint": "^3.12.0"
+  }
+}

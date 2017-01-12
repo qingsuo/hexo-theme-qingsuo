@@ -1,0 +1,59 @@
+/**
+ * header style
+ */
+.header{
+  @include clearfix;
+  @import '_header/logo';
+  @import '_header/menu';
+}
+
+/*
+ * big screen show
+ */
+@include min-screen() {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #F5F5F5;
+    border-bottom: 1px solid #EAEAEA;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    z-index: 1000;
+    padding: $header-padding;
+  }
+}
+
+/*
+ * big screen scroll transition
+ */
+@include only-min-screen(){
+  .header {
+    padding: 15px 15px;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+  .top-nav-short {
+    padding: 0 15px;
+  }
+}
+
+/*
+ * small screen show
+ */
+@include max-screen() {
+  .header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background: #F5F5F5;
+    border-bottom: 1px solid #EAEAEA;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    z-index: 1000;
+    height: 40px;
+    background: $white;
+    box-shadow: 0px 2px 2px $gray;
+  }
+}

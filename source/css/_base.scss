@@ -1,0 +1,76 @@
+/**
+ * base css
+ */
+
+@import '_common/normalize';
+
+html{
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #4a4f6c;
+  background: #fff;
+}
+
+a{
+  color: $theme-color;
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+}
+
+h6 {
+  font-size: 1rem;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
+.content-wrapper {
+  padding: 0 20px;
+}

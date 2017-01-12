@@ -1,0 +1,55 @@
+/**
+ * logo style
+ */
+
+/*
+ * big screen show
+ */
+@include min-screen() {
+  .logo-wrapper {
+    float: left;
+
+    .logo {
+      font-size: $logo-font-size;
+      font-family: $logo-font-family;
+      font-weight: 800;
+    }
+  }
+  .header-icon {
+    display: none;
+  }
+}
+
+/*
+ * small screen show
+ */
+@include max-screen() {
+  .logo-wrapper {
+    display: inline-block;
+    margin-left: 10px;
+
+    .logo {
+      font-size: 22px;
+      line-height: 40px;
+      font-family: $logo-font-family;
+    }
+  }
+
+  .header-icon {
+    color: $theme-color;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    text-align: center;
+    float: right;
+    position: relative;
+    transition: background 0.5s;
+  }
+}
+
+/*
+ * small screen header
+ */
+.header-icon{
+  @include mobile-menu-icon();
+}
